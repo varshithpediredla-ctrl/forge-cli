@@ -18,7 +18,7 @@ program
   .description("Forge — AI coding agent for your terminal (inspired by Gemini CLI)")
   .version(pkg.version)
   .option("-p, --prompt <text>", "Run a single prompt non-interactively")
-  .option("-m, --model <name>", "Model to use", "gemini-2.0-flash")
+  .option("-m, --model <name>", "Model to use", "gemini-3.8-flash")
   .option("-y, --yolo", "Skip confirmation warnings for mutating tools")
   .option("-v, --verbose", "Verbose logging")
   .option("--cwd <path>", "Working directory", process.cwd())
