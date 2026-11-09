@@ -38,7 +38,7 @@ export class ForgeAgent {
 
   constructor(opts: AgentOptions) {
     this.genAI = new GoogleGenerativeAI(opts.apiKey);
-    this.modelName = opts.model || "gemini-2.0-flash";
+    this.modelName = opts.model || "gemini-3.8-flash";
     this.cwd = opts.cwd || process.cwd();
     this.yolo = opts.yolo ?? false;
     this.verbose = opts.verbose ?? false;
@@ -82,7 +82,7 @@ export class ForgeAgent {
                   { type: SchemaType.STRING, description: v.description },
                 ])
               ),
-              required: t.parameters.required || [],
+ required: t.parameters.required || [],
             },
           })),
         },
